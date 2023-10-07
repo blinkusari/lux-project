@@ -1,0 +1,67 @@
+@import './_colors';
+@import './_fonts';
+
+
+.avenir_next_regular_white {
+  font-family: "Avenir Next";
+  color: $primary_white;
+  font-weight: 400;
+}
+.-font-family-system-ui {
+  font-family: "System Ui";
+}
+
+.avenir_next_regular_black {
+  font-family: "Avenir Next";
+  color: $primary_black;
+  font-weight: 400;
+}
+
+.avenir_next_italic {
+  font-family: "Avenir Italic";
+  color: $primary_black;
+}
+
+.avenir_next_bold_white {
+  font-family: "Avenir Next";
+  color: $primary_white;
+  font-weight: 700;
+
+}
+
+.avenir_next_bold_black {
+  font-family: "Avenir Next";
+  color: $primary_black;
+  font-weight: 700;
+
+}
+
+.kiona_regular_white {
+  font-family: "Kiona Regular";
+  color: $primary_white;
+  font-weight: 400;
+
+}
+
+.kiona_regular_black {
+  font-family: "Kiona Regular";
+  color: $primary_black;
+  font-weight: 400;
+
+}
+
+
+.regular_10_white {
+  @extend .avenir_next_regular_white;
+  font-size: 16px;
+}
+
+.regular_black {
+  @extend .avenir_next_regular_black;
+}
+
+.regular_10_black {
+  @extend .avenir_next_regular_black;
+  font-size: 20px;
+}
+

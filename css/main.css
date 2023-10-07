@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Italic";
+  src: url("../fonts/Avenir-Next-LT-Pro-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kiona Regular";
+  src: url("../fonts/Kiona-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kiona Italic";
+  src: url("../fonts/Kiona-Itallic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "System Ui";
+  src: url("../fonts/SFUIText-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Italic";
+  src: url("../fonts/Avenir-Next-LT-Pro-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kiona Regular";
+  src: url("../fonts/Kiona-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kiona Italic";
+  src: url("../fonts/Kiona-Itallic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "System Ui";
+  src: url("../fonts/SFUIText-Regular.ttf") format("truetype");
+}
+.avenir_next_regular_white, .regular_10_white {
+  font-family: "Avenir Next";
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.-font-family-system-ui {
+  font-family: "System Ui";
+}
+
+.avenir_next_regular_black, .regular_10_black, .regular_black {
+  font-family: "Avenir Next";
+  color: #3e3b3c;
+  font-weight: 400;
+}
+
+.avenir_next_italic {
+  font-family: "Avenir Italic";
+  color: #3e3b3c;
+}
+
+.avenir_next_bold_white {
+  font-family: "Avenir Next";
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.avenir_next_bold_black {
+  font-family: "Avenir Next";
+  color: #3e3b3c;
+  font-weight: 700;
+}
+
+.kiona_regular_white {
+  font-family: "Kiona Regular";
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.kiona_regular_black {
+  font-family: "Kiona Regular";
+  color: #3e3b3c;
+  font-weight: 400;
+}
+
+.regular_10_white {
+  font-size: 16px;
+}
+
+.regular_10_black {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
