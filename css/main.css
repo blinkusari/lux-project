@@ -125,6 +125,45 @@
   font-size: 22px;
   color: #ffffff;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.wrapper .content-part .sidebar .top .days-btn,
+.wrapper .content-part .sidebar .top .report-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
+  background-color: #3B7ECD;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrapper .content-part .sidebar .top .days-btn .inactive,
+.wrapper .content-part .sidebar .top .report-btn .inactive {
+  display: block;
+}
+.wrapper .content-part .sidebar .top .days-btn .active-arrow,
+.wrapper .content-part .sidebar .top .report-btn .active-arrow {
+  display: none;
+}
+.wrapper .content-part .sidebar .top .days-btn.active,
+.wrapper .content-part .sidebar .top .report-btn.active {
+  background-color: #E95A0C;
+}
+.wrapper .content-part .sidebar .top .days-btn.active .inactive,
+.wrapper .content-part .sidebar .top .report-btn.active .inactive {
+  display: none;
+}
+.wrapper .content-part .sidebar .top .days-btn.active .active-arrow,
+.wrapper .content-part .sidebar .top .report-btn.active .active-arrow {
+  display: block;
+  position: absolute;
+  right: -40;
+  top: 0;
 }
 .wrapper .content-part .sidebar .bottom .buttons-wrapper {
   gap: 8px;
@@ -142,6 +181,61 @@
   background-color: #173A62;
   height: 100%;
   padding: 10px;
+  display: none;
+}
+.wrapper .content-part .main.active {
+  display: block;
+}
+.wrapper .content-part .main.main-reports .right-part .subtitle {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.wrapper .content-part .main.main-reports .right-part .create, .wrapper .content-part .main.main-reports .right-part .print, .wrapper .content-part .main.main-reports .right-part .help {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  height: 180px;
+  width: 30%;
+  margin: 0 5px;
+}
+.wrapper .content-part .main.main-reports .right-part .create svg, .wrapper .content-part .main.main-reports .right-part .print svg, .wrapper .content-part .main.main-reports .right-part .help svg {
+  margin-bottom: 20px;
+}
+.wrapper .content-part .main.main-reports .right-part .create {
+  background-color: #E95A0C;
+}
+.wrapper .content-part .main.main-reports .right-part .print {
+  background-color: #436080;
+}
+.wrapper .content-part .main.main-reports .right-part .help {
+  background-color: #3B7ECD;
+}
+.wrapper .content-part .main.main-reports .left-part {
+  margin-right: 10%;
+}
+.wrapper .content-part .main.main-reports .left-part #reports-table {
+  color: #ffffff;
+  width: 100%;
+}
+.wrapper .content-part .main.main-reports .left-part #reports-table tr td {
+  padding: 3px 6px;
+}
+.wrapper .content-part .main.main-reports .left-part #reports-table tr td .blue-bg {
+  padding: 2px 4px;
+  background-color: #205D94;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+.wrapper .content-part .main.main-reports .left-part #reports-table .orange-bg {
+  background-color: #E95A0C;
+}
+.wrapper .content-part .main.main-reports .left-part #reports-table .blue-bg {
+  background-color: #3B7ECD;
 }
 
 /*# sourceMappingURL=main.css.map */

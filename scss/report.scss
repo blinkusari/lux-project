@@ -36,7 +36,42 @@
                     font-size: 22px;
                     color: #ffffff;
                     font-weight: 700;
+                    margin-bottom: 10px;
+                }
 
+                .days-btn,
+                .report-btn {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    color: #ffffff;
+                    font-weight: 400;
+                    text-align: left;
+                    background-color: #3B7ECD;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    .inactive{
+                        display: block;
+                    }
+                    .active-arrow{
+                        display: none;
+                    }
+
+                    &.active{
+                    background-color: #E95A0C;
+                        .inactive{
+                            display: none;
+                        }
+                        .active-arrow{
+                            display: block;
+                            position: absolute;
+                        right: -40;
+                        top: 0;
+                        }
+                    }
                 }
             }
 
@@ -49,7 +84,8 @@
                         background-color: #3B7ECD;
                         border: none;
                         outline: none;
-                        &:hover{
+
+                        &:hover {
                             background-color: #0f4786;
 
                         }
@@ -62,6 +98,68 @@
             background-color: #173A62;
             height: 100%;
             padding: 10px;
+            display: none;
+            &.active{
+                display: block;
+            }
+            &.main-reports{
+                .right-part{                    
+                    .subtitle{
+                        font-size: 22px;
+                        color: #ffffff;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                    .create, .print, .help{
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        color: #ffffff;
+                        height: 180px;
+                        width: 30%;
+                        margin: 0  5px;
+                        svg{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .create{
+                        background-color: #E95A0C;
+
+                    }
+                    .print{
+                        background-color: #436080;
+                    }
+                    .help{
+                        background-color: #3B7ECD;
+
+                    }
+                }
+                .left-part{
+                    margin-right: 10%;
+                    #reports-table{
+                        color: #ffffff;
+                        width: 100%;
+                        tr td{
+                            padding: 3px 6px;
+                            .blue-bg{
+                                padding: 2px 4px;
+                                background-color: #205D94;
+                                border-radius: 8px;
+                                margin-left: 4px;
+                            }
+                        }
+                        .orange-bg{
+                            background-color: #E95A0C;
+                        }
+                        .blue-bg{
+                            background-color: #3B7ECD;
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
