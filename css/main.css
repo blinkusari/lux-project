@@ -186,13 +186,13 @@
 .wrapper .content-part .main.active {
   display: block;
 }
-.wrapper .content-part .main.main-reports .right-part .subtitle {
+.wrapper .content-part .main .right-part .subtitle {
   font-size: 22px;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.wrapper .content-part .main.main-reports .right-part .create, .wrapper .content-part .main.main-reports .right-part .print, .wrapper .content-part .main.main-reports .right-part .help {
+.wrapper .content-part .main .right-part .create, .wrapper .content-part .main .right-part .print, .wrapper .content-part .main .right-part .help {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -203,38 +203,38 @@
   width: 30%;
   margin: 0 5px;
 }
-.wrapper .content-part .main.main-reports .right-part .create svg, .wrapper .content-part .main.main-reports .right-part .print svg, .wrapper .content-part .main.main-reports .right-part .help svg {
+.wrapper .content-part .main .right-part .create svg, .wrapper .content-part .main .right-part .print svg, .wrapper .content-part .main .right-part .help svg {
   margin-bottom: 20px;
 }
-.wrapper .content-part .main.main-reports .right-part .create {
+.wrapper .content-part .main .right-part .create {
   background-color: #E95A0C;
 }
-.wrapper .content-part .main.main-reports .right-part .print {
+.wrapper .content-part .main .right-part .print {
   background-color: #436080;
 }
-.wrapper .content-part .main.main-reports .right-part .help {
+.wrapper .content-part .main .right-part .help {
   background-color: #3B7ECD;
 }
-.wrapper .content-part .main.main-reports .left-part {
+.wrapper .content-part .main .left-part {
   margin-right: 10%;
 }
-.wrapper .content-part .main.main-reports .left-part #reports-table {
+.wrapper .content-part .main .left-part #reports-table {
   color: #ffffff;
   width: 100%;
 }
-.wrapper .content-part .main.main-reports .left-part #reports-table tr td {
+.wrapper .content-part .main .left-part #reports-table tr td {
   padding: 3px 6px;
 }
-.wrapper .content-part .main.main-reports .left-part #reports-table tr td .blue-bg {
+.wrapper .content-part .main .left-part #reports-table tr td .blue-bg {
   padding: 2px 4px;
   background-color: #205D94;
   border-radius: 8px;
   margin-left: 4px;
 }
-.wrapper .content-part .main.main-reports .left-part #reports-table .orange-bg {
+.wrapper .content-part .main .left-part #reports-table .orange-bg {
   background-color: #E95A0C;
 }
-.wrapper .content-part .main.main-reports .left-part #reports-table .blue-bg {
+.wrapper .content-part .main .left-part #reports-table .blue-bg {
   background-color: #3B7ECD;
 }
 
