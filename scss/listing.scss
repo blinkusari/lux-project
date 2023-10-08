@@ -67,7 +67,7 @@ html {
   height: calc(100vh - 160px);
 }
 
-.active {
+.nav-item.active {
   border-top: 3px solid yellow !important;
   opacity: 1 !important;
 }
