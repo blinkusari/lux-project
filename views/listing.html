@@ -159,12 +159,14 @@
 
 <div id="body">
     <div class="innerBody">
-        <div class="ovCont" id="ovCont" style="height:813px;">
+        <div class="ovCont" id="ovCont">
             <div class="ovHeader">
                 <div class="outerMatchRow" style="height:100%">
                     <div class="innerMatchRow">
                         <div class="nameMatch" style="height:100%">
-                            <img alt="" src="../images/icons/burger-menu.svg">
+                            <button class="burger-menu" id="leagueMenuBurger">
+                                <img alt="" src="../images/icons/burger-menu.svg">
+                            </button>
                             <p class="sportName">Futbolli</p>
                             <p class="nameMatchPill activePill">Matches <span>630</span></p>
                             <p class="nameMatchPill">Konkurse <span>45</span></p>
@@ -211,7 +213,7 @@
             </div>
 
             <div class="d-flex">
-                <div class="leaguesMenu">
+                <div class="leaguesMenu opened-menu" id="leaguesMenu">
                     <div class="leagues-header">
                         Teresisht <span class="caret"></span>
                     </div>
@@ -597,8 +599,20 @@
                             </ul>
                         </li>
                     </ul>
+
+                    <div class="scrolling-buttons">
+                        <button>
+                            <img alt="" src="../images/icons/totop-arrow.svg">
+                        </button>
+                        <button>
+                            <img alt="" src="../images/icons/top-arrow.svg">
+                        </button>
+                        <button>
+                            <img alt="" src="../images/icons/bottom-arrow.svg">
+                        </button>
+                    </div>
                 </div>
-                <div class="playsListing" style="height:773px;overflow-y: scroll;">
+                <div class="playsListing" style="overflow-y: scroll;">
                     <div class="matchRow" title="Chile - Primera Division">
                         <div class="outerMatchRow">
                             <div class="innerMatchRow">
@@ -1039,12 +1053,24 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="scrolling-buttons">
+                        <button>
+                            <img alt="" src="../images/icons/totop-arrow.svg">
+                        </button>
+                        <button>
+                            <img alt="" src="../images/icons/top-arrow.svg">
+                        </button>
+                        <button>
+                            <img alt="" src="../images/icons/bottom-arrow.svg">
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="betslipCont" id="betslipCont" style="height:299px;">
+        <div class="betslipCont" id="betslipCont">
             <div id="betslip">
                 <div id="innerBetslip">
                     <div class="bsAjaxLoader" id="bsAjaxLoader" style="display: none;">

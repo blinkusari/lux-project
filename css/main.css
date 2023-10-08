@@ -306,6 +306,7 @@ html {
   /*width:20%;*/
   background: orange;
   float: right;
+  height: calc(100vh - 160px);
 }
 
 .active {
@@ -831,19 +832,22 @@ html {
   margin-left: 10px;
 }
 
+.playsListing {
+  width: 100%;
+  height: calc(100vh - 160px);
+  position: relative;
+}
+
 .leaguesMenu {
   width: 25%;
   min-width: 230px;
-}
-
-.playsListing {
-  width: 100%;
-}
-
-.leaguesMenu {
   color: white;
-  overflow-y: scroll;
-  max-height: calc(100vh - 160px);
+  height: calc(100vh - 160px);
+  position: relative;
+  display: none;
+}
+.leaguesMenu.opened-menu {
+  display: block;
 }
 .leaguesMenu .leagues-header {
   background: rgb(68, 68, 68);
@@ -856,6 +860,8 @@ html {
 .leaguesMenu #myMenu {
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
+  max-height: calc(100vh - 210px);
 }
 .leaguesMenu #myMenu .caret {
   cursor: pointer;
@@ -922,6 +928,54 @@ html {
   font-size: 12px;
   padding: 5px 1px;
   font-weight: bold;
+}
+.leaguesMenu #myMenu input[type=checkbox] {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: white;
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid white;
+  transform: translateY(-0.075em);
+}
+.leaguesMenu #myMenu input[type=checkbox]:checked:before {
+  content: "";
+  background: white;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scrolling-buttons {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.scrolling-buttons button {
+  height: 50px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.scrolling-buttons img {
+  height: 50px;
+}
+
+.burger-menu {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,3 +7,8 @@ for (i = 0; i < toggler.length; i++) {
         this.classList.toggle("caret-down");
     });
 }
+
+document.getElementById('leagueMenuBurger').addEventListener("click", function () {
+    const menu = document.getElementById('leaguesMenu');
+    menu.classList.toggle('opened-menu');
+});
