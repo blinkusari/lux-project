@@ -1,0 +1,871 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Report</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../css/betslip.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/swiper.js" type="text/javascript"></script>
+    <script src="https://cookieconsent.popupsmart.com/src/js/popper.js" type="text/javascript"></script>
+</head>
+
+<body style="background:#242424">
+
+<div id="header">
+    <ul class="nav sportheader">
+        <li class="nav-item sportList" id="sport1" onclick=" openSportOv(1)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView soccer"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow">
+                            <p class="numberCell1 homenav" id="soccerLive">30</p>
+                        </div>
+                        <div class="numberRow">
+                            <p class="numberCell2 homenav" id="soccerPre">1218</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport3" onclick=" openSportOv(3)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView tenis"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow">
+                            <p class="numberCell1 homenav" id="tenisLive">5</p>
+                        </div>
+                        <div class="numberRow">
+                            <p class="numberCell2 homenav" id="tenisPre">76</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport2" onclick=" openSportOv(2)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView basket"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow">
+                            <p class="numberCell1 homenav" id="basketLive">22</p>
+                        </div>
+                        <div class="numberRow">
+                            <p class="numberCell2 homenav" id="basketPre">130</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport42" onclick=" openSportOv(42)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView hockey"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="hockeyLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="hockeyPre">166</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList active" id="sport24" onclick=" openSportOv(24)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView volley"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="volleyLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="volleyPre">49</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport36" onclick=" openSportOv(36)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView ppong"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="ppongLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="ppongPre">0</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport45" onclick=" openSportOv(45)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView falcon"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="faLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="faPre">16</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport14" onclick=" openSportOv(14)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView handball"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="handballLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="handballPre">72</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item sportList" id="sport64" onclick=" openSportOv(64)">
+            <a class="tbbody">
+                <div class="cellContentHome">
+                    <div class="iconPart">
+                        <p class="navView badminton"></p>
+                    </div>
+                    <div class="numbersPart">
+                        <div class="numberRow"><p class="numberCell1 homenav" id="badmintonLive">0</p></div>
+                        <div class="numberRow"><p class="numberCell2 homenav" id="badmintonPre">0</p></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="body">
+    <div class="innerBody">
+        <div class="ovCont" id="ovCont" style="height:813px;">
+            <div class="ovHeader">
+                <div class="outerMatchRow" style="height:100%">
+                    <div class="innerMatchRow">
+                        <div class="nameMatch" style="height:100%">
+                            <img src="../images/icons/burger-menu.svg" alt="">
+                            <p class="sportName">Futbolli</p>
+                            <p class="nameMatchPill activePill">Matches <span>630</span></p>
+                            <p class="nameMatchPill">Konkurse <span>45</span></p>
+                        </div>
+<!--                        <div class="descrMatch" style="height:100%"></div>-->
+                        <div class="oddMatch" style="height:100%">
+                            <div class="allRubCont" style="width: 450px;">
+                                <div class="sixRubCont" style="width: 450px;">
+                                    <div class="innerSixRubcont">
+                                        <div class="oddsRow">
+                                            <div class="oneRubContHeader"><p>Rezultat Final</p></div>
+                                            <div class="oneRubContHeader"><p>Nen/Mbi</p></div>
+                                            <div class="oneRubContHeader"><p>Goli Tjeter</p></div>
+                                        </div>
+                                        <div class="oddsRow">
+                                            <div class="oneRubContHeader">
+                                                <div class="innerOneRubCont">
+                                                    <p class="oddContHeader">1</p>
+                                                    <p class="oddContHeader">X</p>
+                                                    <p class="oddContHeader">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="oneRubContHeader">
+                                                <div class="innerOneRubCont">
+                                                    <p class="oddContHeader"></p>
+                                                    <p class="oddContHeader">Nen</p>
+                                                    <p class="oddContHeader">Mbi</p>
+                                                </div>
+                                            </div>
+                                            <div class="oneRubContHeader">
+                                                <div class="innerOneRubCont"><p class="oddContHeader">1</p>
+                                                    <p class="oddContHeader">X</p>
+                                                    <p class="oddContHeader">2</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 10%; display: table-cell;height: 38px; min-width: 20px;"><p
+                                        class="plusContent"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="d-flex">
+               <div class="leaguesMenu">
+                   FUTBOLLI
+               </div>
+               <div class="playsListing" style="height:773px;overflow-y: scroll;">
+                   <div class="matchRow" title="Chile - Primera Division">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">Coquimbo Unido</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">Union Espanola</span>
+                                           </p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Chile - Primera Division</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.15</p>
+                                                           <p class="oddCont indeksi1  ">3.40</p>
+                                                           <p class="oddCont indeksi2  ">3.40</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.85</p>
+                                                           <p class="oddCont indeksi1  ">1.90</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.75</p>
+                                                           <p class="oddCont indeksi1  ">11.55</p>
+                                                           <p class="oddCont indeksi2  ">2.26</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.60</p>
+                                                           <p class="oddCont indeksi1  ">2.10</p>
+                                                           <p class="oddCont indeksi2  ">3.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.40</p>
+                                                           <p class="oddCont indeksi1  ">2.78</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.35</p>
+                                                           <p class="oddCont indeksi1  ">2.85</p>
+                                                           <p class="oddCont indeksi2  ">3.09</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="matchRow" title="Mexico - Liga MX, Apertura">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">CF Monterrey</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">FC Juarez</span></p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Mexico - Liga MX, Apertura</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.46</p>
+                                                           <p class="oddCont indeksi1  ">4.50</p>
+                                                           <p class="oddCont indeksi2  ">6.50</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">2.10</p>
+                                                           <p class="oddCont indeksi1  ">1.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.39</p>
+                                                           <p class="oddCont indeksi1  ">15.05</p>
+                                                           <p class="oddCont indeksi2  ">3.16</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.90</p>
+                                                           <p class="oddCont indeksi1  ">2.30</p>
+                                                           <p class="oddCont indeksi2  ">5.80</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.49</p>
+                                                           <p class="oddCont indeksi1  ">2.51</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.81</p>
+                                                           <p class="oddCont indeksi1  ">3.21</p>
+                                                           <p class="oddCont indeksi2  ">4.26</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="matchRow" title="Chile - Primera Division">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">Coquimbo Unido</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">Union Espanola</span>
+                                           </p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Chile - Primera Division</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.15</p>
+                                                           <p class="oddCont indeksi1  ">3.40</p>
+                                                           <p class="oddCont indeksi2  ">3.40</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.85</p>
+                                                           <p class="oddCont indeksi1  ">1.90</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.75</p>
+                                                           <p class="oddCont indeksi1  ">11.55</p>
+                                                           <p class="oddCont indeksi2  ">2.26</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.60</p>
+                                                           <p class="oddCont indeksi1  ">2.10</p>
+                                                           <p class="oddCont indeksi2  ">3.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.40</p>
+                                                           <p class="oddCont indeksi1  ">2.78</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.35</p>
+                                                           <p class="oddCont indeksi1  ">2.85</p>
+                                                           <p class="oddCont indeksi2  ">3.09</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="matchRow" title="Mexico - Liga MX, Apertura">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">CF Monterrey</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">FC Juarez</span></p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Mexico - Liga MX, Apertura</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.46</p>
+                                                           <p class="oddCont indeksi1  ">4.50</p>
+                                                           <p class="oddCont indeksi2  ">6.50</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">2.10</p>
+                                                           <p class="oddCont indeksi1  ">1.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.39</p>
+                                                           <p class="oddCont indeksi1  ">15.05</p>
+                                                           <p class="oddCont indeksi2  ">3.16</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.90</p>
+                                                           <p class="oddCont indeksi1  ">2.30</p>
+                                                           <p class="oddCont indeksi2  ">5.80</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.49</p>
+                                                           <p class="oddCont indeksi1  ">2.51</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.81</p>
+                                                           <p class="oddCont indeksi1  ">3.21</p>
+                                                           <p class="oddCont indeksi2  ">4.26</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="matchRow" title="Chile - Primera Division">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">Coquimbo Unido</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">Union Espanola</span>
+                                           </p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Chile - Primera Division</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.15</p>
+                                                           <p class="oddCont indeksi1  ">3.40</p>
+                                                           <p class="oddCont indeksi2  ">3.40</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.85</p>
+                                                           <p class="oddCont indeksi1  ">1.90</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.75</p>
+                                                           <p class="oddCont indeksi1  ">11.55</p>
+                                                           <p class="oddCont indeksi2  ">2.26</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.60</p>
+                                                           <p class="oddCont indeksi1  ">2.10</p>
+                                                           <p class="oddCont indeksi2  ">3.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.40</p>
+                                                           <p class="oddCont indeksi1  ">2.78</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">2.35</p>
+                                                           <p class="oddCont indeksi1  ">2.85</p>
+                                                           <p class="oddCont indeksi2  ">3.09</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="matchRow" title="Mexico - Liga MX, Apertura">
+                       <div class="outerMatchRow">
+                           <div class="innerMatchRow">
+                               <div class="minutaCell"><span>01:00</span><br><span>08/10</span></div>
+                               <div class="descrMatch">
+                                   <table class="innerDescr">
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="2"></td>
+                                           <td class="cellDescr" colspan="2"><p class="resCont">- : -</p></td>
+                                           <td class="cellDescr" colspan="2"></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td class="cellDescr" colspan="6"><p style="margin:0;"><span
+                                                   class="matchNameHomeAway">CF Monterrey</span><span
+                                                   class="matchNameDashDelimiter"> - </span><span
+                                                   class="matchNameHomeAway">FC Juarez</span></p></td>
+                                       </tr>
+                                       <tr class="rowDescr">
+                                           <td colspan="3"><p class="ligaCont">Mexico - Liga MX, Apertura</p></td>
+                                           <td colspan="3"><p class="halfCont">1.Halbzeit</p></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                               <div class="oddMatch">
+                                   <div class="allRubCont">
+                                       <div class="sixRubCont">
+                                           <div class="innerSixRubcont">
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.46</p>
+                                                           <p class="oddCont indeksi1  ">4.50</p>
+                                                           <p class="oddCont indeksi2  ">6.50</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">2.10</p>
+                                                           <p class="oddCont indeksi1  ">1.70</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.39</p>
+                                                           <p class="oddCont indeksi1  ">15.05</p>
+                                                           <p class="oddCont indeksi2  ">3.16</p></div>
+                                                   </div>
+                                               </div>
+                                               <div class="oddsRow">
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.90</p>
+                                                           <p class="oddCont indeksi1  ">2.30</p>
+                                                           <p class="oddCont indeksi2  ">5.80</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont pazari">2.5</p>
+                                                           <p class="oddCont indeksi0  ">1.49</p>
+                                                           <p class="oddCont indeksi1  ">2.51</p></div>
+                                                   </div>
+                                                   <div class="oneRubCont">
+                                                       <div class="innerOneRubCont"><p class="oddCont indeksi0  ">1.81</p>
+                                                           <p class="oddCont indeksi1  ">3.21</p>
+                                                           <p class="oddCont indeksi2  ">4.26</p></div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="plusCont"><p class="plusContent">+ 88</p></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div class="betslipCont" id="betslipCont" style="height:299px;">
+            <div id="betslip">
+                <div id="innerBetslip">
+                    <div class="bsAjaxLoader" id="bsAjaxLoader" style="display: none;">
+                        <div id="circlingAjaxLoader">
+                        </div>
+                        <p class="ticketConfirmationTextAjaxLoader">Ju lutemi prisni konfirmimin e biletes</p>
+
+                    </div>
+                    <div class="bsHeader">
+                        <p class="bsh lang" style="width: 100%; text-align: left" translate="">Skedina</p>
+                        <div style="width: 100%; height: 40px; clear: both; position: absolute; border-top: none;">
+                            <p class="bsQuestionMark" id="resetBetslipCross" title="Fshi te gjitha bastet">
+                                X<span></span></p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="bsBetType">
+                        <p class="bsTypeItems selected lang" id="bsti0" key="single" onclick="changeBetSlipType(this)"
+                           type="0">Single</p>
+                        <p class="bsTypeItems lang" id="bsti1" key="multi" onclick="changeBetSlipType(this)" type="1">
+                            MultiBet</p>
+                        <p class="bsTypeItems lang" id="bsti2" key="sistem" onclick="changeBetSlipType(this)" type="2">
+                            System</p>
+                    </div>
+                    <div id="bsContFixedHeight">
+                        <div style="display: block; padding: 0px; height: 0; overflow: visible;">
+                            <div id="initialBSMessage" style="padding: 10px;">
+                                <p>Për momentin nuk keni zgjedhur asnjë ndeshje</p>
+
+                            </div>
+                        </div>
+
+                        <div id="betslipHeaderDesc" style="display: none">
+                            <div class="bsRow clearfix">
+                                <div class="bsDet">
+                                    <div class="bsKodiNdeshjaBetSlip clearfix">
+                                        <p class="kodiNdeshjesBs " style="color: white !important">Kod.</p>
+                                        <p class="bsMatchDesc" style="text-align: center; color: white !important">
+                                            Eventi</p>
+                                    </div>
+                                </div>
+                                <div class="bsOdds">
+                                    <div class="bsOddRow ">
+                                        <p class="bsRowOddRubPick" style="color: white !important">Rub.</p>
+                                        <p class="bsRowOddPick" style="color: white !important">Poz</p>
+                                        <p class="bsRemoveOddRow noBackground"></p>
+                                        <p class="bsOdd " style="color: white !important">Koef</p>
+                                        <p class="oddIncDec "></p>
+                                        <p class="bsRez ">Rez.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bsCont" style="height:49px;">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="otherMessaggesPopup" style="display: none">
+                        <div id="otherMessaggesPopupInner"></div>
+                    </div>
+
+
+                    <div id="bsTotOdd">
+                        <p class="checkSel" id="checkBS" title="Click here to check all betslip"></p>
+                        <p class="uncheckSel" id="unCheckBs" title="Click here to uncheck all betslip"></p>
+                        <p class="resetBetslip" id="resetBetslipI" onclick="resetBetslip()"
+                           title="Click here to clear betslip"></p>
+
+                        <div class="totOdd" id="totOdd">
+                            <span class="lang" id="oddText" key="totOdd">Total odds</span>
+                            <span id="oddValue">1.00</span>
+                        </div>
+
+                        <div class="totOdd" id="totOddSys">
+                            <span class="lang" id="oddMin" key="totOddMin">Koef Min</span>
+                            <span id="oddMinValue" style="font-weight: bold;">1.00</span>
+                            <span class="lang" id="oddMax" key="totOddMax">Koef Max</span>
+                            <span id="oddMaxValue" style="font-weight: bold;">1.00</span>
+                        </div>
+                    </div>
+                    <div class="betResponse clearfix" id="betResponseDiv">
+                        <p>
+
+                            <span class="oddsChText" id="bastRefuz">Bet was not accepted.</span>
+                        </p>
+                    </div>
+                    <div class="clearfix" id="bsCalculations">
+                        <div class="bsDescriptions1">
+                            <div class="bsCalcHalfWidth1 left clearfix">
+                                <div class="bsCalculationsItems">
+
+                                    <select disabled="true" id="systemBsCalc"
+                                            onblur="systemIsBlured()" onfocus="systemHasTheFocus()"
+                                            style="width: 100%; box-sizing: border-box; float: left">
+                                        <option>System</option>
+                                    </select>
+                                </div>
+
+                                <div class="bsCalculationsItems shuma_big">
+                                    <div class="shumaOuterContainer">
+                                        <div class="shumaCurrency clearfix">
+                                            <div class="totalOddText" style="position: relative;">
+                                                <div class="downSum" onclick="changeSum(-1)"><span>-</span></div>
+                                                <div id="mainSumInput" style="width: 170px;">0.00</div>
+                                                <div class="upSum" onclick="changeSum(1)"><span>+</span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="currencyNameDescBs" style="display:none;">
+                                        <p id="currencyNameDescBsText"></p>
+                                    </div>
+                                </div>
+                                <div class="bsCalculationsItems" style="height: 90px; padding-top: 0px;">
+
+                                    <div class="strlnItemsInner clearfix">
+                                        <div>
+                                            <span>Vendos bastin: </span>
+                                            <span id="totalBet" style="float:right; padding-right:2px">0</span>
+
+                                        </div>
+                                        <div style="background:black;">
+                                            <span>Koef Total: </span>
+                                            <span id="bsMaxKoefi" style="float:right; padding-right:2px">1.00</span>
+                                        </div>
+                                        <div id="minBetSistem">
+                                            <span style="display:none;">Min Bet: </span>
+                                            <span id="bsMinBetSystem"
+                                                  style="float:right; padding-right:2px;display:none;">1.00</span>
+                                        </div>
+                                        <div style="background:black;">
+                                            <span>Fitim: </span>
+                                            <span id="totalRevenue"
+                                                  style="float:right; padding-right:2px; color:yellow;font-size:12px;">0.00</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="bsCalcHalfWidth1 right clearfix" style="display:none">
+
+
+                                <div class="bsCalculationsItems shuma_big">
+                                    <div class="strlnItemsInner clearfix " style="padding: 0 !important">
+                                        <p class="nrKombinations" style="width: 33.33%; float: left; padding: 0 5px;">
+                                            <span>Komb: </span>
+                                            <span id="noCombinations" style="text-align: left;"></span>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="placeBetCont clearfix">
+                            <div class="clearfix" id="bsPranoChangesOuterCont">
+                                <p id="bsPranoChanges" style="display: none">Prano ndryshimet</p>
+                            </div>
+                            <div class="clearfix" id="placeBetOuterCont">
+                                <p class="lang" id="placeBet" key="">Shtyp Biletën</p>
+
+                            </div>
+
+                            <div class="pranoNdryshimetNeVazhdim clearfix" style="display:none">
+                                <input checked="checked" id="pranoNdryshimetNeVazhdim" type="checkbox">
+                                <span>Prano çdo ndryshim gjatë konfirmimit të bastit</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="msgAcc" style="display: none">
+                        <p class="lang" id="acc" key="accMsg">By placing a bet, you automatically accept the most recent
+                            version of the Terms and Conditions.</p>
+                    </div>
+                    <div id="notLoggedBS">
+                        <p class="lang" id="nL" key="pleaseLogIn">Please log in to place a bet</p>
+                    </div>
+                    <div class="bsCont clearfix" id="bsRemovable">
+
+                        <p id="bsResp"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="backCont" onclick="exitMainWindow()">
+        <p class="exit"></p>
+    </div>
+
+    <div id="langCont" onclick="openLangSelection()">
+        <div style="height: 70%;"><p class="langIc"></p></div>
+        <div style="height: 30%;"><p id="langName">Shqip</p></div>
+    </div>
+    <div id="tickCont">
+        <div style="height: 70%;"><p class="tickIc"></p></div>
+        <div style="height: 30%;"><p translate="">Kerko Bilete</p></div>
+    </div>
+    <div id="resCont" onclick="openResults()">
+        <p class="resultIc"></p>
+    </div>
+    <div id="userCont">
+        <div id="oraDataServerit">7/10/2023 23:26:08</div>
+        <div>
+            <p id="userNameLogIn">ID 106419 - Version 1.0.0.0</p>
+        </div>
+    </div>
+    <div id="creditCont">
+        <div style="width: 30%;"><p class="creditIc"></p></div>
+        <div style="width: 70%;"><p id="userCredit">-0.00</p><br>
+            <p translate="">Krediti</p></div>
+    </div>
+</div>
+
+<script src="../js/mainFunctions.js" type="text/javascript"></script>
+</body>
+
+</html>
