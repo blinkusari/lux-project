@@ -978,4 +978,127 @@ html {
   padding: 0;
 }
 
+#body .match-statistic {
+  background-color: #088004;
+  height: 136px;
+}
+#body .match-statistic .right-part {
+  justify-content: end;
+}
+#body .match-statistic .right-part .kit {
+  margin-right: 25px;
+}
+#body .match-statistic .right-part .real-time {
+  margin-right: 5px;
+}
+#body .match-statistic .left-part {
+  justify-content: start;
+}
+#body .match-statistic .left-part .kit {
+  margin-left: 25px;
+}
+#body .match-statistic .left-part .real-time {
+  margin-left: 5px;
+}
+#body .match-statistic .left-part,
+#body .match-statistic .right-part {
+  display: flex;
+  align-items: center;
+}
+#body .match-statistic .left-part .content,
+#body .match-statistic .right-part .content {
+  display: flex;
+  align-items: start;
+}
+#body .match-statistic .left-part .content .arrows,
+#body .match-statistic .right-part .content .arrows {
+  display: flex;
+  flex-direction: column;
+}
+#body .match-statistic .left-part .content .arrows button,
+#body .match-statistic .right-part .content .arrows button {
+  border: none;
+  background-color: #065901;
+  outline: none;
+  padding: 0 8px;
+}
+#body .match-statistic .left-part .content .arrows .back-btn,
+#body .match-statistic .left-part .content .arrows .stat-btn,
+#body .match-statistic .right-part .content .arrows .back-btn,
+#body .match-statistic .right-part .content .arrows .stat-btn {
+  margin-bottom: 1px;
+  height: 55px;
+}
+#body .match-statistic .left-part .content .arrows .prev-btn,
+#body .match-statistic .left-part .content .arrows .next-btn,
+#body .match-statistic .right-part .content .arrows .prev-btn,
+#body .match-statistic .right-part .content .arrows .next-btn {
+  height: 80px;
+}
+#body .match-statistic .left-part .content .real-time,
+#body .match-statistic .right-part .content .real-time {
+  color: #ffffff;
+}
+#body .match-statistic .left-part .kit img,
+#body .match-statistic .right-part .kit img {
+  max-width: 120px;
+}
+#body .match-statistic .center-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#body .match-statistic .center-part .result-wrapper {
+  padding: 2px 50px;
+  background-color: #499727;
+  text-align: center;
+  margin-bottom: 1px;
+}
+#body .match-statistic .center-part .result-wrapper .result {
+  color: #B8D344;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#body .match-statistic .center-part .teams {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+#body .match-statistic .center-part .teams .center-colon {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  margin: 0 5px;
+}
+#body .match-statistic .center-part .location {
+  color: rgba(255, 255, 255, 0.7607843137);
+  font-weight: 300;
+  font-size: 10px;
+  margin-bottom: 1px;
+}
+#body .match-statistic .center-part #match-statistics td.team-name {
+  width: 50%;
+  text-align: left;
+}
+#body .match-statistic .center-part #match-statistics {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  width: 100%;
+  border-spacing: 0 1px;
+  border-collapse: initial;
+}
+#body .match-statistic .center-part #match-statistics tr {
+  background-color: #0B3E00;
+}
+#body .match-statistic .center-part #match-statistics tr td {
+  width: fit-content;
+  padding: 2px 4px;
+  text-align: center;
+}
+#body .match-statistic .center-part #match-statistics tr td p {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

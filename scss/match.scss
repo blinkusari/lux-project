@@ -1,0 +1,144 @@
+#body {
+    .match-statistic {
+        background-color: #088004;
+        height: 136px;
+
+        .right-part {
+            justify-content: end;
+
+            .kit {
+                margin-right: 25px;
+            }
+
+            .real-time {
+                margin-right: 5px;
+
+            }
+        }
+
+        .left-part {
+            justify-content: start;
+
+            .kit {
+                margin-left: 25px;
+            }
+
+            .real-time {
+                margin-left: 5px;
+
+            }
+        }
+
+        .left-part,
+        .right-part {
+            display: flex;
+            align-items: center;
+
+            .content {
+                display: flex;
+                align-items: start;
+
+                .arrows {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        border: none;
+                        background-color: #065901;
+                        outline: none;
+                        padding: 0 8px;
+                    }
+
+                    .back-btn,
+                    .stat-btn {
+                        margin-bottom: 1px;
+                        height: 55px;
+                    }
+
+                    .prev-btn,
+                    .next-btn {
+                        height: 80px;
+                    }
+                }
+
+                .real-time {
+                    color: #ffffff;
+                }
+            }
+
+            .kit {
+                img {
+                    max-width: 120px;
+                }
+            }
+        }
+
+        .center-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .result-wrapper {
+                padding: 2px 50px;
+                background-color: #499727;
+                text-align: center;
+                margin-bottom: 1px;
+
+                .result {
+                    color: #B8D344;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .teams {
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 1px;
+
+                .center-colon {
+                    display: inline-block;
+                    width: 1em;
+                    text-align: center;
+                    margin: 0 5px;
+                }
+            }
+
+            .location {
+                color: #ffffffc2;
+                font-weight: 300;
+                font-size: 10px;
+                margin-bottom: 1px;
+
+            }
+
+            #match-statistics td.team-name {
+                width: 50%;
+                text-align: left;
+            }
+
+            #match-statistics {
+                color: #ffffff;
+                font-size: 10px;
+                font-weight: 500;
+                width: 100%;
+                border-spacing: 0 1px;
+                border-collapse: initial;
+                tr {
+                    background-color: #0B3E00;
+
+                    td {
+                        width: fit-content;
+                        padding: 2px 4px;
+                        text-align: center;
+
+                        p {
+                            margin-bottom: 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
