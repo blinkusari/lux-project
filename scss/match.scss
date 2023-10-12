@@ -125,6 +125,7 @@
                 width: 100%;
                 border-spacing: 0 1px;
                 border-collapse: initial;
+
                 tr {
                     background-color: #0B3E00;
 
@@ -132,12 +133,29 @@
                         width: fit-content;
                         padding: 2px 4px;
                         text-align: center;
-
+                        img{
+                            width: 13px;
+                        }
                         p {
                             margin-bottom: 0
                         }
                     }
+                    .chat{
+                        padding: 2px 8px;
+                        background-color: #095808;
+                        .chat-btn{
+                            cursor: pointer;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                        }
+                    }
                 }
+                tr.last-row td {
+                    width: 100%; 
+                    text-align: left;
+                    padding-left: 30px;
+                  }
             }
         }
     }

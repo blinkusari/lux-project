@@ -1097,8 +1097,26 @@ html {
   padding: 2px 4px;
   text-align: center;
 }
+#body .match-statistic .center-part #match-statistics tr td img {
+  width: 13px;
+}
 #body .match-statistic .center-part #match-statistics tr td p {
   margin-bottom: 0;
+}
+#body .match-statistic .center-part #match-statistics tr .chat {
+  padding: 2px 8px;
+  background-color: #095808;
+}
+#body .match-statistic .center-part #match-statistics tr .chat .chat-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#body .match-statistic .center-part #match-statistics tr.last-row td {
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
