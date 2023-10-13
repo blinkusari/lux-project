@@ -134,17 +134,21 @@
                         width: fit-content;
                         padding: 2px 4px;
                         text-align: center;
-                        img{
+
+                        img {
                             width: 13px;
                         }
+
                         p {
                             margin-bottom: 0
                         }
                     }
-                    .chat{
+
+                    .chat {
                         padding: 2px 8px;
                         background-color: #095808;
-                        .chat-btn{
+
+                        .chat-btn {
                             cursor: pointer;
                             border: none;
                             outline: none;
@@ -152,12 +156,122 @@
                         }
                     }
                 }
+
                 tr.last-row td {
-                    width: 100%; 
+                    width: 100%;
                     text-align: left;
                     padding-left: 30px;
-                  }
+                }
             }
+        }
+    }
+}
+
+
+.ticketModal.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+
+    .modal-content {
+        background-color: #111111 !important;
+        margin: 8% auto;
+        width: 100%;
+        position: relative;
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            background-color: #333333;
+            border-radius: 0;
+            border-bottom: none !important;
+
+            .title {
+                color: #ffffff;
+                padding: 5px 20px;
+                margin-bottom: 0
+            }
+
+            .close {
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 5px;
+                margin: 0;
+                background-color: #555555;
+
+            }
+        }
+
+        .modal-body {
+            padding: 100px 20px 80px;
+            background-color: #111111;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .content-wrapper {
+                width: 700px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 80px;
+
+                .content-item {
+                    flex-basis: calc(33.33% - 10px);
+                    margin: 5px;
+                    padding: 10px 8px;
+                    box-sizing: border-box;
+                    background-color: #555555;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+            .checkbox-wrapper {
+                display: flex;
+                align-items: center;
+            
+                .checkbox {
+                    margin-right: 8px;
+                    background: transparent;
+                    border: 4px solid white;
+                    width: 20px;
+                    height: 20px;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: #111111 !important;
+            
+                    &::before {
+                        content: "";
+                        display: flex;
+                        background-color: #ffffff;
+                        width: 2px;
+                        height: 2px;
+                        transform: scale(0);
+                        transition: 120ms transform ease-in-out;
+                        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4); /* Change the box shadow here */
+                    }
+                }
+            
+                input[type="checkbox"]:checked + .checkbox::before {
+                    transform: scale(1);
+                }
+            
+                span {
+                    color: #ffffff;
+                }
+            }
+            
         }
     }
 }
