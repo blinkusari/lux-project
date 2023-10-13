@@ -181,7 +181,7 @@
 
     .modal-content {
         background-color: #111111 !important;
-        margin: 8% auto;
+        margin: 4% auto;
         width: 100%;
         position: relative;
 
@@ -196,7 +196,8 @@
             .title {
                 color: #ffffff;
                 padding: 5px 20px;
-                margin-bottom: 0
+                margin-bottom: 0;
+                font-size: 20px;
             }
 
             .close {
@@ -204,7 +205,7 @@
                 font-size: 24px;
                 font-weight: bold;
                 cursor: pointer;
-                padding: 5px;
+                padding: 8px;
                 margin: 0;
                 background-color: #555555;
 
@@ -221,7 +222,7 @@
             flex-direction: column;
 
             .content-wrapper {
-                width: 700px;
+                width: 90%;
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 80px;
@@ -229,12 +230,22 @@
                 .content-item {
                     flex-basis: calc(33.33% - 10px);
                     margin: 5px;
-                    padding: 10px 8px;
+                    padding: 20px 10px;
                     box-sizing: border-box;
                     background-color: #555555;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    svg{
+                        width: 32px;
+                        height: 32px;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        color: #ffffff;
+                        line-height: 14px;
+                    }
                 }
             }
             .checkbox-wrapper {
