@@ -184,6 +184,13 @@
         margin: 4% auto;
         width: 100%;
         position: relative;
+        overflow: hidden;
+        .bg{
+            position: absolute;
+            left: -15px;
+            bottom: -15px;
+            z-index: 9;
+        }
 
         .modal-header {
             display: flex;
@@ -222,11 +229,11 @@
             flex-direction: column;
 
             .content-wrapper {
-                width: 90%;
+                width: 70%;
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 80px;
-
+                z-index: 99;
                 .content-item {
                     flex-basis: calc(33.33% - 10px);
                     margin: 5px;
@@ -255,27 +262,27 @@
                 .checkbox {
                     margin-right: 8px;
                     background: transparent;
-                    border: 4px solid white;
+                    border: 3px solid white;
                     width: 20px;
                     height: 20px;
                     -webkit-appearance: none;
                     appearance: none;
                     background-color: #111111 !important;
-            
-                    &::before {
-                        content: "";
-                        display: flex;
-                        background-color: #ffffff;
-                        width: 2px;
-                        height: 2px;
-                        transform: scale(0);
-                        transition: 120ms transform ease-in-out;
-                        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4); /* Change the box shadow here */
-                    }
+                    position: relative;
                 }
             
-                input[type="checkbox"]:checked + .checkbox::before {
+                .checkbox:checked:before {
                     transform: scale(1);
+                    content: "";
+                    background: white;
+                    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             
                 span {
