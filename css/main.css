@@ -1235,4 +1235,80 @@ html {
   color: #ffffff;
 }
 
+.searchModal.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+.searchModal.modal .modal-content {
+  background-color: #111111 !important;
+  margin: 4% auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.searchModal.modal .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #333333;
+  border-radius: 0;
+  border-bottom: none !important;
+}
+.searchModal.modal .modal-content .modal-header .title {
+  color: #ffffff;
+  padding: 5px 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.searchModal.modal .modal-content .modal-header .close {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0;
+  background-color: #555555;
+}
+.searchModal.modal .modal-content .modal-body {
+  padding: 50px 70px;
+  background-color: #111111;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper {
+  width: 70%;
+  display: flex;
+  background-color: #333333;
+  margin: 5px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper {
+  background-color: #333333;
+  width: 30%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .img-wrapper img {
+  object-fit: contain;
+  width: 100%;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .dsp-part {
+  margin-bottom: 50px;
+}
+
 /*# sourceMappingURL=main.css.map */

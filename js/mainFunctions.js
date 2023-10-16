@@ -19,14 +19,24 @@ function openTicket() {
     modal.style.display = "block";
 }
 
+function searchTicket() {
+    var modal = document.getElementById("searchModal");
+    modal.style.display = "block";
+}
+
 function closeTicket() {
-    var modal = document.getElementById("ticketModal");
-    modal.style.display = "none";
+    var modal = document.getElementsByClassName("modal");
+    console.log(modal);
+    for(let i=0; i< modal.length; i++){
+        modal[i].style.display = "none";
+    }
 }
 
 window.onclick = function(event) {
-    var modal = document.getElementById("ticketModal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+    var modal = document.getElementsByClassName("modal");
+    for(let i=0; i< modal.length; i++){
+        if (event.target == modal[i]) {
+            modal[i].style.display = "none";
+        }    }
+  
 }

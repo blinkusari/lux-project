@@ -1680,7 +1680,7 @@
                 <p id="langName">Shqip</p>
             </div>
         </div>
-        <div id="tickCont" onclick="openTicket()">
+        <div id="tickCont" onclick="searchTicket()">
             <div style="height: 70%;">
                 <p class="tickIc"></p>
             </div>
@@ -1688,7 +1688,9 @@
                 <p translate="">Kerko Bilete</p>
             </div>
         </div>
-    
+        <div style="color:white" onclick="openTicket()">
+            Settings
+        </div>
         <div id="ticketModal" class="ticketModal modal">
            
             <div class="modal-content">
@@ -1804,9 +1806,40 @@
                 </div>
             </div>
         </div>
+        
+
+        <div id="searchModal" class="searchModal modal">
+           
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="title">Kontrollo tiketen</p>
+                    <span class="close" onclick="closeTicket()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Close_LG"> <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                    </span>
+                </div>
+                <div class="modal-body">
+                   <div class="content-wrapper">
+                    <p>sadas</p>
+                   </div>
+                   <div class="search-wrapper">
+                    <div class="img-wrapper">
+                        <img alt="" src="../images/icons/Lux_sport.png">
+                    </div>
+                    <div class="dsp-part">
+                        <p>Ju lutem perdorni <br>
+                        Bardoscanerin <br>
+                          ose <br>
+                        jepni numrin e tiketit dhe kodin</p>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
         <div id="resCont" onclick="openResults()">
             <p class="resultIc"></p>
-        </div>
+        </div>  
         <div id="userCont">
             <div id="oraDataServerit">7/10/2023 23:26:08</div>
             <div>
