@@ -185,7 +185,8 @@
         width: 100%;
         position: relative;
         overflow: hidden;
-        .bg{
+
+        .bg {
             position: absolute;
             left: -15px;
             bottom: -15px;
@@ -234,6 +235,7 @@
                 flex-wrap: wrap;
                 margin-bottom: 80px;
                 z-index: 99;
+
                 .content-item {
                     flex-basis: calc(33.33% - 10px);
                     margin: 5px;
@@ -243,11 +245,13 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    svg{
+
+                    svg {
                         width: 32px;
                         height: 32px;
                     }
-                    p{
+
+                    p {
                         margin-bottom: 0;
                         font-size: 14px;
                         color: #ffffff;
@@ -255,10 +259,11 @@
                     }
                 }
             }
+
             .checkbox-wrapper {
                 display: flex;
                 align-items: center;
-            
+
                 .checkbox {
                     margin-right: 8px;
                     background: transparent;
@@ -270,7 +275,7 @@
                     background-color: #111111 !important;
                     position: relative;
                 }
-            
+
                 .checkbox:checked:before {
                     transform: scale(1);
                     content: "";
@@ -284,12 +289,12 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                 }
-            
+
                 span {
                     color: #ffffff;
                 }
             }
-            
+
         }
     }
 }
@@ -354,29 +359,91 @@
                 background-color: #333333;
                 margin: 5px;
             }
-            .search-wrapper{
+
+            .search-wrapper {
                 background-color: #333333;
                 width: 30%;
                 margin: 5px;
                 display: flex;
                 flex-direction: column;
                 padding: 30px 10px;
-                .img-wrapper{
+
+                .img-wrapper {
                     display: flex;
                     justify-content: center;
-                    img{
+
+                    img {
                         object-fit: contain;
-                        width: 100%;
+                        max-width: 90%;
                     }
+
                     margin-bottom: 50px;
                 }
-                .dsp-part{
+
+                .dsp-part {
                     margin-bottom: 50px;
 
+                    p {
+                        color: #ffffff;
+                        text-align: center;
+                    }
+
+                }
+
+                .calculate-wrapper {
+                    padding: 0 30px;
+                    margin-bottom: 15px;
+
+                    .ticket-code-wrapper {
+                        display: flex;
+                        justify-content: center;
+
+                        .ticket-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 70%;
+
+                            p {
+                                text-align: center;
+                                color: #ffffff;
+                                margin-bottom: 5px;
+
+                            }
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                        }
+
+                        .code-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 30%;
+                            margin-left: 20px;
+
+                            p {
+                                text-align: center;
+                                color: #ffffff;
+                                margin-bottom: 5px;
+                            }
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                                height: 30px;
+                            }
+
+                        }
+                    }
                 }
             }
-         
-            
+
+
         }
     }
 }

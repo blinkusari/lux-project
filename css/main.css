@@ -1305,10 +1305,55 @@ html {
 }
 .searchModal.modal .modal-content .modal-body .search-wrapper .img-wrapper img {
   object-fit: contain;
-  width: 100%;
+  max-width: 90%;
 }
 .searchModal.modal .modal-content .modal-body .search-wrapper .dsp-part {
   margin-bottom: 50px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .dsp-part p {
+  color: #ffffff;
+  text-align: center;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper {
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .ticket-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .ticket-wrapper p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .ticket-wrapper input {
+  width: 100%;
+  height: 100%;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .code-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-left: 20px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .code-wrapper p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .code-wrapper input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
