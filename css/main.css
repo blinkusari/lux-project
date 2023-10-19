@@ -1282,7 +1282,7 @@ html {
   border-radius: 0;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: stretch;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper {
   width: 70%;
@@ -1299,6 +1299,7 @@ html {
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper .title {
   font-weight: 500;
+  font-size: 14px;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table {
   margin-bottom: 40px;
@@ -1309,8 +1310,8 @@ html {
 .searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table .td {
   padding: 0 20px;
   color: #ffffff;
-  height: 26px;
-  font-size: 13px;
+  height: 20px;
+  font-size: 12px;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table .border-td {
   border: 1px solid rgba(222, 226, 230, 0.3137254902);
@@ -1335,6 +1336,9 @@ html {
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td {
   color: #ffffff;
+  font-size: 13px;
+  vertical-align: top;
+  padding: 2px;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.soccer-wrapper {
   padding-left: 20px;
@@ -1342,14 +1346,21 @@ html {
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td .soccer {
   height: 50px;
 }
-.searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.open {
+.searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.active {
   border-right: 6px solid #A6A6A6;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.lost {
   border-right: 6px solid #991105;
 }
+.searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.won {
+  border-right: 6px solid #0b8808;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr td.canceled {
+  border-right: 6px solid #356da8;
+}
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr th {
   color: #C5B140;
+  font-size: 15px;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper #matches-table tr th.status {
   border-right: 6px solid #646464;
@@ -1370,6 +1381,7 @@ html {
   display: flex;
   flex-direction: column;
   padding: 30px 10px;
+  justify-content: center;
   align-items: center;
 }
 .searchModal.modal .modal-content .modal-body .search-wrapper .img-wrapper {
