@@ -1454,5 +1454,29 @@ html {
   margin: 4px;
   border: none;
 }
+.searchModal.modal .modal-content .modal--footer {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.searchModal.modal .modal-content .modal--footer .btn-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 10px;
+}
+.searchModal.modal .modal-content .modal--footer .btn-wrapper button {
+  margin-right: 2px;
+  background-color: #525252;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  height: 54px;
+  padding: 0 10px;
+}
+.searchModal.modal .modal-content .modal--footer .btn-wrapper .save, .searchModal.modal .modal-content .modal--footer .btn-wrapper .pay-ticket {
+  padding: 15px 25px;
+}
 
 /*# sourceMappingURL=main.css.map */

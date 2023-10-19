@@ -374,6 +374,7 @@
 
                 #ticket-table {
                     margin-bottom: 40px;
+
                     table {
                         width: 100%;
                     }
@@ -385,20 +386,23 @@
                         font-size: 13px;
                     }
 
-                   .border-td{
-                    border: 1px solid #dee2e650;
-                    border-left: none;
-                    border-right: none;
-                   }
-                   .border-right{
-                    border-color: #dee2e650 !important;
-                   }
+                    .border-td {
+                        border: 1px solid #dee2e650;
+                        border-left: none;
+                        border-right: none;
+                    }
+
+                    .border-right {
+                        border-color: #dee2e650 !important;
+                    }
                 }
-                .btn-wrapper{
+
+                .btn-wrapper {
                     display: flex;
                     justify-content: center;
                     margin-bottom: 5px;
-                    button{
+
+                    button {
                         background-color: #ffffff;
                         color: #000000;
                         padding: 10px;
@@ -407,40 +411,50 @@
                         font-weight: 700;
                     }
                 }
-                #matches-table{
-                     tr{
-                        td{
+
+                #matches-table {
+                    tr {
+                        td {
                             color: #ffffff;
-                            &.soccer-wrapper{
+
+                            &.soccer-wrapper {
                                 padding-left: 20px;
 
                             }
-                            .soccer{
+
+                            .soccer {
                                 height: 50px;
                             }
-                            &.open{
+
+                            &.open {
                                 border-right: 6px solid #A6A6A6;
                             }
-                            &.lost{
+
+                            &.lost {
                                 border-right: 6px solid #991105;
 
                             }
                         }
-                        th{
+
+                        th {
                             color: #C5B140;
-                            &.status{
+
+                            &.status {
                                 border-right: 6px solid #646464;
                             }
                         }
+
                         &:first-child {
                             background-color: #646464;
                         }
-                     }   
-                     tr:nth-child(even) td {
-                        background-color: #181818; 
                     }
+
+                    tr:nth-child(even) td {
+                        background-color: #181818;
+                    }
+
                     tr:nth-child(odd) td {
-                        background-color: #323232; 
+                        background-color: #323232;
                     }
                 }
             }
@@ -557,6 +571,33 @@
             }
 
 
+        }
+
+        .modal--footer {
+            padding: 20px 70px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            .btn-wrapper {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin-right: 10px;
+
+                button {
+                    margin-right: 2px;
+                    background-color: #525252;
+                    outline: none;
+                    border: none;
+                    color: #ffffff;
+                    height: 54px;
+                    padding: 0 10px;
+                }
+                .save, .pay-ticket{
+                    padding: 15px 25px;
+                }
+            }
         }
     }
 }
