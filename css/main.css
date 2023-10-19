@@ -1289,6 +1289,47 @@ html {
   display: flex;
   background-color: #333333;
   margin: 5px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper .title {
+  font-weight: 500;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table {
+  margin-bottom: 40px;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table table {
+  width: 100%;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table .td {
+  padding: 0 20px;
+  color: #ffffff;
+  height: 26px;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table .border-td {
+  border: 1px solid rgba(222, 226, 230, 0.3137254902);
+  border-left: none;
+  border-right: none;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper #ticket-table .border-right {
+  border-color: rgba(222, 226, 230, 0.3137254902) !important;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper .btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.searchModal.modal .modal-content .modal-body .content-wrapper .btn-wrapper button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: 700;
 }
 .searchModal.modal .modal-content .modal-body .search-wrapper {
   background-color: #333333;
@@ -1348,7 +1389,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .searchModal.modal .modal-content .modal-body .search-wrapper .calculate-wrapper .ticket-code-wrapper .code-wrapper p {
   text-align: center;

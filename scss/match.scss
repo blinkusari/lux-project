@@ -358,6 +358,53 @@
                 display: flex;
                 background-color: #333333;
                 margin: 5px;
+                padding: 10px 25px;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    color: #ffffff;
+                    margin-bottom: 0;
+
+                }
+
+                .title {
+                    font-weight: 500;
+                }
+
+                #ticket-table {
+                    margin-bottom: 40px;
+                    table {
+                        width: 100%;
+                    }
+
+                    .td {
+                        padding: 0 20px;
+                        color: #ffffff;
+                        height: 26px;
+                    }
+
+                   .border-td{
+                    border: 1px solid #dee2e650;
+                    border-left: none;
+                    border-right: none;
+                   }
+                   .border-right{
+                    border-color: #dee2e650 !important;
+                   }
+                }
+                .btn-wrapper{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        background-color: #ffffff;
+                        color: #000000;
+                        padding: 10px;
+                        outline: none;
+                        border: none;
+                        font-weight: 700;
+                    }
+                }
             }
 
             .search-wrapper {
@@ -368,6 +415,7 @@
                 flex-direction: column;
                 padding: 30px 10px;
                 align-items: center;
+
                 .img-wrapper {
                     display: flex;
                     justify-content: center;
@@ -413,7 +461,7 @@
 
                             input {
                                 width: 100%;
-                                height: 100%;   
+                                height: 100%;
                                 background-color: #646464;
                                 outline: none;
                                 border: none;
@@ -427,7 +475,7 @@
                             flex-direction: column;
                             align-items: center;
                             width: 30%;
-                            margin-left: 20px;
+                            margin-left: 10px;
 
                             p {
                                 text-align: center;
@@ -437,7 +485,7 @@
 
                             input {
                                 width: 100%;
-                                height: 100%;   
+                                height: 100%;
                                 background-color: #646464;
                                 outline: none;
                                 border: none;
@@ -449,25 +497,25 @@
                     }
                 }
 
-                .calculator-wrapper{
+                .calculator-wrapper {
                     padding: 0 20;
                     margin-bottom: 15px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                        flex-wrap: wrap;
-                        width: 90%;
+                    flex-wrap: wrap;
+                    width: 90%;
 
-                        input{
+                    input {
                         width: 25%;
-                            background-color: #525252;
-                            color: #ffffff;
-                            padding: 10px;
-margin: 4px;
-border: none;
-                        }
+                        background-color: #525252;
+                        color: #ffffff;
+                        padding: 10px;
+                        margin: 4px;
+                        border: none;
+                    }
                 }
-                
+
             }
 
 
