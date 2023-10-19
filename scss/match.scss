@@ -354,6 +354,7 @@
             align-items: stretch;
 
             .content-wrapper {
+                position: relative;
                 width: 70%;
                 display: flex;
                 background-color: #333333;
@@ -610,6 +611,11 @@
                     padding: 15px 25px;
                 }
             }
+        }
+
+        .scrollable {
+            overflow: scroll;
+            max-height: 90vh;
         }
     }
 }
