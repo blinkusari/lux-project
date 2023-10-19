@@ -40,3 +40,45 @@ window.onclick = function(event) {
         }    }
   
 }
+
+
+const ticketNumberInput = document.getElementById('ticket-number');
+const codeNumberInput = document.getElementById('code-number');
+const calculatorWrapper = document.querySelector('.calculator-wrapper');
+let activeInput = null;
+
+ticketNumberInput.addEventListener('focus', function() {
+    setActiveInput(ticketNumberInput);
+});
+
+codeNumberInput.addEventListener('focus', function() {
+    setActiveInput(codeNumberInput);
+});
+
+function setActiveInput(inputField) {
+    activeInput = inputField;
+}
+
+const numKeys = document.querySelectorAll('.numKey');
+const cKey = document.getElementById('cKey');
+const delKey = document.getElementById('delKey');
+
+numKeys.forEach(key => {
+    key.addEventListener('click', function() {
+        if (activeInput) {
+            activeInput.value += this.value;
+        }
+    });
+});
+
+cKey.addEventListener('click', function() {
+    if (activeInput) {
+        activeInput.value = '';
+    }
+});
+
+delKey.addEventListener('click', function() {
+    if (activeInput) {
+        activeInput.value = activeInput.value.slice(0, -1);
+    }
+});
