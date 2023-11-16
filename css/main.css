@@ -1285,6 +1285,7 @@ html {
   align-items: stretch;
 }
 .searchModal.modal .modal-content .modal-body .content-wrapper {
+  position: relative;
   width: 70%;
   display: flex;
   background-color: #333333;
@@ -1490,6 +1491,10 @@ html {
 .searchModal.modal .modal-content .modal--footer .btn-wrapper .save,
 .searchModal.modal .modal-content .modal--footer .btn-wrapper .pay-ticket {
   padding: 15px 25px;
+}
+.searchModal.modal .modal-content .scrollable {
+  overflow: scroll;
+  max-height: 90vh;
 }
 
 #ticket-processing {
