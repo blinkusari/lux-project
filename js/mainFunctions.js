@@ -16,12 +16,50 @@ document.getElementById('leagueMenuBurger').addEventListener("click", function (
 
 function openTicket() {
     var modal = document.getElementById("ticketModal");
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 function searchTicket() {
     var modal = document.getElementById("searchModal");
-    modal.style.display = "block";
+    modal.style.display = "flex";
+}
+
+function ticketProcessing() {
+    var modal = document.getElementById("ticketprocessingModal");
+    modal.style.display = "flex";
+    var loaderProgress = document.querySelector('.loader-progress');
+    var loaderSecure = document.querySelector('.loader-secure');
+    var modalProcess = document.querySelector('.modal-body.process');
+    var modalThanks = document.querySelector('.modal-body.modal-thanks');
+
+    setTimeout(function() {
+        loaderProgress.style.display = "none";
+        loaderSecure.style.display = "flex";
+    }, 2000);
+
+    setTimeout(function() {
+        modalProcess.style.display = "none";
+        modalThanks.style.display = "flex";
+    }, 4000);
+
+    setTimeout(function() {
+        closeTicket();
+        closeTicketProcessing();
+    }, 5000);
+}
+
+function closeTicketProcessing() {
+    var modal = document.getElementById("ticketprocessingModal");
+    modal.style.display = "none";
+    var loaderProgress = document.querySelector('.loader-progress');
+    var loaderSecure = document.querySelector('.loader-secure');
+    var modalProcess = document.querySelector('.modal-body.process');
+    var modalThanks = document.querySelector('.modal-body.modal-thanks');
+
+    loaderProgress.style.display = "block";
+    loaderSecure.style.display = "none";
+    modalProcess.style.display = "flex";
+    modalThanks.style.display = "none";
 }
 
 function closeTicket() {

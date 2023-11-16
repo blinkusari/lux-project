@@ -1487,8 +1487,106 @@ html {
   height: 54px;
   padding: 0 10px;
 }
-.searchModal.modal .modal-content .modal--footer .btn-wrapper .save, .searchModal.modal .modal-content .modal--footer .btn-wrapper .pay-ticket {
+.searchModal.modal .modal-content .modal--footer .btn-wrapper .save,
+.searchModal.modal .modal-content .modal--footer .btn-wrapper .pay-ticket {
   padding: 15px 25px;
+}
+
+#ticket-processing {
+  width: 75px;
+  height: 50px;
+  display: inline-block;
+  background: #646464;
+  margin: 9px;
+  padding: 0px 3px;
+  margin-left: 0px;
+}
+#ticket-processing p {
+  font-size: 11px;
+  color: white;
+  text-align: center;
+}
+
+.ticketprocessingModal.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+}
+.ticketprocessingModal.modal .modal-content {
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  background-color: #111111;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+.ticketprocessingModal.modal .modal-content .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader-overlay {
+  position: relative;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader-content.loader-progress {
+  display: block;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader-content.loader-progress span {
+  font-size: 34px;
+  color: #ffffff;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader-content.loader-secure {
+  display: none;
+}
+.ticketprocessingModal.modal .modal-content .modal-body .loader {
+  --b: 10px;
+  --n: 10;
+  --g: 10deg;
+  --c: rgb(255, 255, 255);
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(rgba(0, 0, 0, 0), var(--c)) content-box;
+  --_m:
+      repeating-conic-gradient(#0000 0deg,
+          #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+          #0000 calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side, #0000 calc(98% - var(--b)), #000 calc(100% - var(--b)));
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: load 1s infinite steps(var(--n));
+}
+@keyframes load {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.ticketprocessingModal.modal .modal-content .modal-body.modal-thanks {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

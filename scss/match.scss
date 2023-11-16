@@ -437,6 +437,7 @@
                             &.lost {
                                 border-right: 6px solid #991105;
                             }
+
                             &.won {
                                 border-right: 6px solid #0b8808;
                             }
@@ -606,10 +607,126 @@
                     height: 54px;
                     padding: 0 10px;
                 }
-                .save, .pay-ticket{
+
+                .save,
+                .pay-ticket {
                     padding: 15px 25px;
                 }
             }
+        }
+    }
+}
+
+#ticket-processing {
+    width: 75px;
+    height: 50px;
+    display: inline-block;
+    background: #646464;
+    margin: 9px;
+    padding: 0px 3px;
+    margin-left: 0px;
+
+    p {
+        font-size: 11px;
+        color: white;
+        text-align: center;
+    }
+}
+
+.ticketprocessingModal.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+
+    .modal-content {
+        margin: auto;
+        width: 500px;
+        height: 300px;
+        background-color: #111111;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+
+        .modal-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .title {
+                text-align: center;
+                color: #ffffff;
+                margin-bottom: 40px;
+            }
+
+            .loader-overlay {
+                position: relative;
+            }
+
+            .loader-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                &.loader-progress {
+                    display: block;
+
+                    span {
+                        font-size: 34px;
+                        color: #ffffff;
+                    }
+                }
+
+                &.loader-secure {
+                    display: none;
+                }
+            }
+
+            .loader {
+                --b: 10px;
+                --n: 10;
+                --g: 10deg;
+                --c: rgb(255, 255, 255);
+
+                width: 100px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                padding: 1px;
+                background: conic-gradient(#0000, var(--c)) content-box;
+                --_m:
+                    repeating-conic-gradient(#0000 0deg,
+                        #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+                        #0000 calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+                    radial-gradient(farthest-side, #0000 calc(98% - var(--b)), #000 calc(100% - var(--b)));
+                -webkit-mask: var(--_m);
+                mask: var(--_m);
+                -webkit-mask-composite: destination-in;
+                mask-composite: intersect;
+                animation: load 1s infinite steps(var(--n));
+
+            }
+
+            @keyframes load {
+                to {
+                    transform: rotate(1turn)
+                }
+            }
+
+
+
+            &.modal-thanks {
+                display: none;
+            }
+
         }
     }
 }
